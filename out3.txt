@@ -1,0 +1,996 @@
+{
+   accUpdate : false
+   activation : "ReLU"
+   batchNorm : false
+   batchSize : 128
+   cacheMode : "writeonce"
+   channelSize : "{25,50,80}"
+   convertData : true
+   cuda : true
+   dataset : "Mnist"
+   decayFactor : 0.1
+   dropout : true
+   dropoutProb : "{0.1,0.2,0.25,0.5,0.5}"
+   hiddenSize : "{1024,1024}"
+   kernelSize : "{4,5,6}"
+   kernelStride : "{1,1,1}"
+   learningRate : 0.01
+   lecunlcn : false
+   loadModel : true
+   loadModelPath : "/home/amit-pc/save/amitpc-HP-Z620-Workstation:1457519727:1.dat"
+   loadSize : ""
+   lrDecay : "schedule"
+   maxEpoch : 5000
+   maxOutNorm : 1
+   maxTries : 25000
+   maxWait : 700000
+   metaPath : "."
+   minLR : 1e-05
+   momentum : 0.6
+   padding : false
+   poolSize : "{2,2,2}"
+   poolStride : "{2,2,2}"
+   progress : false
+   sampleSize : "."
+   saturateEpoch : 30000
+   schedule : {[250]=1e-05,[40]=0.001,[120]=0.0001}
+   silent : false
+   standardize : true
+   trainPath : "."
+   useDevice : 1
+   validPath : "."
+   zca : false
+}	
+Model:	
+nil	
+FileLogger: log will be written to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457519727:1/amitpc-HP-Z620-Workstation:1457558595:1/log	
+==> epoch # 1 for optimizer :	
+==> example speed = 932.57612525022 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.007667969250191	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.63964035087719	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71283333333333	
+==> epoch # 2 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.59654564659 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.007647676395394	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64221052631579	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.72986666666667	
+==> epoch # 3 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.53712768822 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.007637384081096	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64627192982456	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.73016666666667	
+==> epoch # 4 for optimizer :	
+learningRate	0.01	
+==> example speed = 931.82214787155 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0076402774777329	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64744736842105	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.72636666666667	
+==> epoch # 5 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.56072566157 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0076382385847861	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64915789473684	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71906666666667	
+==> epoch # 6 for optimizer :	
+learningRate	0.01	
+==> example speed = 931.47888752961 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0076139173925969	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.65169298245614	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.70336666666667	
+==> epoch # 7 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.49496180382 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.007613277581003	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.65579824561404	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.72856666666667	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 8 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.94298220888 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0076196843817917	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.65494736842105	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71236666666667	
+==> epoch # 9 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.73551175877 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.007612887987965	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.65537719298246	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.73266666666667	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 10 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.56443364202 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0076170914079014	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.65677192982456	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7291	
+==> epoch # 11 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.13561054027 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0076219983557511	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.65614035087719	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71986666666667	
+==> epoch # 12 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.83435994656 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0076377519895459	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.65801754385965	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.74023333333333	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 13 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.79367269801 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0076549260309565	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.65822807017544	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7224	
+==> epoch # 14 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.34905833154 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0076753269203922	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.66122807017544	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71413333333333	
+==> epoch # 15 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.48849867748 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0076999379609063	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.66214912280702	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.72236666666667	
+==> epoch # 16 for optimizer :	
+learningRate	0.01	
+==> example speed = 931.53841389321 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0078523413946754	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.65472807017544	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7208	
+==> epoch # 17 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.68088383823 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.008053749573161	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64573684210526	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.50683333333333	
+==> epoch # 18 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.70875615948 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0080678408128476	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.63970175438596	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7264	
+==> epoch # 19 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.30411606363 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081160358511216	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.63582456140351	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71116666666667	
+==> epoch # 20 for optimizer :	
+learningRate	0.01	
+==> example speed = 931.6045729014 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0080957882644837	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.63740350877193	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.70526666666667	
+==> epoch # 21 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.18709598214 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081584364855499	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.63772807017544	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7354	
+==> epoch # 22 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.3290947668 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0080673060706484	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64021929824561	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.58666666666667	
+==> epoch # 23 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.83509275478 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0080659690509763	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64005263157895	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7443	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 24 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.46638942528 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081992163706941	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.63032456140351	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.6957	
+==> epoch # 25 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.57033761288 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081307987591677	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.6400701754386	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71153333333333	
+==> epoch # 26 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.39592007427 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081262707393072	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.6400350877193	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.74873333333333	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 27 for optimizer :	
+learningRate	0.01	
+==> example speed = 931.04672301814 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0080733672192222	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64217543859649	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.73543333333333	
+==> epoch # 28 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.09697566127 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0082211464723648	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.63306140350877	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.68933333333333	
+==> epoch # 29 for optimizer :	
+learningRate	0.01	
+==> example speed = 931.36053248207 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081113238881903	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64480701754386	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.36703333333333	
+==> epoch # 30 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.2892792676 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.008132978800096	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64071929824561	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.74786666666667	
+==> epoch # 31 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.23768196648 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0080757810647725	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64702631578947	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7518	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 32 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.73779584446 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0080489790850913	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64791228070175	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.72953333333333	
+==> epoch # 33 for optimizer :	
+learningRate	0.01	
+==> example speed = 931.71663922498 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081684490567759	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64307894736842	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.76066666666667	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 34 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.19292369238 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081340309580167	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64464035087719	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7203	
+==> epoch # 35 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.21522838167 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.008125833021967	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64606140350877	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.756	
+==> epoch # 36 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.65311869516 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0080902863960517	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64863157894737	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7488	
+==> epoch # 37 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.57298830064 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081230948804415	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64799122807018	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75196666666667	
+==> epoch # 38 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.8332146327 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081221813963868	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64592105263158	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.69216666666667	
+==> epoch # 39 for optimizer :	
+learningRate	0.01	
+==> example speed = 931.96859369228 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0081588565090246	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.6445	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.54873333333333	
+==> epoch # 40 for optimizer :	
+learningRate	0.01	
+==> example speed = 932.19968320058 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0080704763932535	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.64621052631579	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.67296666666667	
+==> epoch # 41 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.17625736183 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0083602576792589	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.68271929824561	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75553333333333	
+==> epoch # 42 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.36531511253 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0098636814477848	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.60090350877193	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.61323333333333	
+==> epoch # 43 for optimizer :	
+learningRate	0.001	
+==> example speed = 931.6221893003 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010037153835882	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.5824298245614	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.479	
+==> epoch # 44 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.90772534257 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0097582381486196	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.59468421052632	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.763	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 45 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.63993832004 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010134174018924	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.5754649122807	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.74583333333333	
+==> epoch # 46 for optimizer :	
+learningRate	0.001	
+==> example speed = 931.95063238733 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010648393780864	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56393859649123	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.73143333333333	
+==> epoch # 47 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.61654006977 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010566626267824	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56128070175439	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7642	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 48 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.03252337536 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010193444720834	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57640350877193	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.76626666666667	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 49 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.80400644003 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010270411264478	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57494736842105	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.56736666666667	
+==> epoch # 50 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.67265709159 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010064191760724	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57990350877193	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.47436666666667	
+==> epoch # 51 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.87230369773 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010253227192407	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.58057894736842	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.4821	
+==> epoch # 52 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.5393101657 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010541436701142	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56633333333333	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.5203	
+==> epoch # 53 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.5728815938 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010461596777216	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56976315789474	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.701	
+==> epoch # 54 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.56559409454 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010155166115329	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.5780701754386	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75603333333333	
+==> epoch # 55 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.12362473577 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010232037687859	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57273684210526	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.74986666666667	
+==> epoch # 56 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.25075888208 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010820273811706	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56354385964912	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.76546666666667	
+==> epoch # 57 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.51470696119 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010563649746061	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56508771929825	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.5539	
+==> epoch # 58 for optimizer :	
+learningRate	0.001	
+==> example speed = 931.74228728962 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010332025064362	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56856140350877	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.35176666666667	
+==> epoch # 59 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.97315664985 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010435750266962	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56284210526316	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.74973333333333	
+==> epoch # 60 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.03828640619 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010531579300674	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.5635350877193	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.726	
+==> epoch # 61 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.36374431405 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01034134369496	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56923684210526	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.5828	
+==> epoch # 62 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.06261135608 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010274452787742	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57455263157895	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.6587	
+==> epoch # 63 for optimizer :	
+learningRate	0.001	
+==> example speed = 931.77890268148 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010375393967182	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56986842105263	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.66873333333333	
+==> epoch # 64 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.66108434355 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010416792964029	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57578947368421	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7244	
+==> epoch # 65 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.31921389422 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010402823741673	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57030701754386	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.66643333333333	
+==> epoch # 66 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.8213685641 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010249394832647	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57015789473684	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75556666666667	
+==> epoch # 67 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.97928061032 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01046299404115	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56761403508772	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.022833333333333	
+==> epoch # 68 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.69630680195 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01039375714949	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56523684210526	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7342	
+==> epoch # 69 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.59332731336 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01053718693354	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56254385964912	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.47173333333333	
+==> epoch # 70 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.5786389479 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010618239884837	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56357894736842	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.64266666666667	
+==> epoch # 71 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.24478290631 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010429583973355	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56649122807018	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.66273333333333	
+==> epoch # 72 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.31139102884 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010338344636716	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56908771929825	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.14893333333333	
+==> epoch # 73 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.76749361564 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01012444335048	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57148245614035	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.41616666666667	
+==> epoch # 74 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.52289333574 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010574621614308	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56895614035088	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7352	
+==> epoch # 75 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.79604926856 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010397791991108	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56885087719298	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71	
+==> epoch # 76 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.85685307329 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010237333830686	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57463157894737	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.0337	
+==> epoch # 77 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.06975007137 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01054231351126	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56961403508772	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7632	
+==> epoch # 78 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.20694926629 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010142306403458	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57370175438596	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.69606666666667	
+==> epoch # 79 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.34634831716 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010602098943546	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56691228070175	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.6681	
+==> epoch # 80 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.50171963105 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010624583719767	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56770175438596	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.70343333333333	
+==> epoch # 81 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.17816191669 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010226263680305	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.5749649122807	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.50346666666667	
+==> epoch # 82 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.45902111981 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010055959864318	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57527192982456	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.74426666666667	
+==> epoch # 83 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.92985067455 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010257090089614	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57383333333333	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.748	
+==> epoch # 84 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.92403316258 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010258487704205	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57302631578947	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75863333333333	
+==> epoch # 85 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.40655531434 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01052782486963	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56581578947368	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.0018	
+==> epoch # 86 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.80271440646 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010423541882233	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56839473684211	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75726666666667	
+==> epoch # 87 for optimizer :	
+learningRate	0.001	
+==> example speed = 931.93158558669 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01065194421414	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56436842105263	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.005	
+==> epoch # 88 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.77880939827 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010242771036444	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57229824561404	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71546666666667	
+==> epoch # 89 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.68186382893 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010314979567165	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.5735701754386	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.57493333333333	
+==> epoch # 90 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.98674330975 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010494756846749	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.5630701754386	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7379	
+==> epoch # 91 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.14796506225 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010297833950199	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57421052631579	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7109	
+==> epoch # 92 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.58079009213 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010294482224866	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56928947368421	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.65783333333333	
+==> epoch # 93 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.7760677705 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010316399384312	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57164035087719	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.49556666666667	
+==> epoch # 94 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.27561200698 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010288307652487	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56858771929825	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.4882	
+==> epoch # 95 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.66344447195 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010413316451667	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56488596491228	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.70636666666667	
+==> epoch # 96 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.87860348669 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010416906321955	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57031578947368	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.76666666666667	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 97 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.15252150268 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010472446698891	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57152631578947	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.64036666666667	
+==> epoch # 98 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.35460607221 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010164405964968	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57981578947368	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71233333333333	
+==> epoch # 99 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.09608329806 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010270982641923	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57435964912281	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.3164	
+==> epoch # 100 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.1229278944 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010451339569705	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56418421052632	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.12236666666667	
+==> epoch # 101 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.89459480072 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010553294476013	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.5579298245614	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7684	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 102 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.46917530063 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01051158612862	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56145614035088	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7679	
+==> epoch # 103 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.997489127 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010135201518647	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57492105263158	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.76433333333333	
+==> epoch # 104 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.78541969894 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010487696367398	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56714912280702	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.5117	
+==> epoch # 105 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.84703744848 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010170152994973	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57695614035088	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.76373333333333	
+==> epoch # 106 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.86751460463 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010402489216356	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56619298245614	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75723333333333	
+==> epoch # 107 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.43899275159 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010167936159505	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57765789473684	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75616666666667	
+==> epoch # 108 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.1801634048 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010340961710054	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57518421052632	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75186666666667	
+==> epoch # 109 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.90057454513 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010571802401752	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56491228070175	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.59933333333333	
+==> epoch # 110 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.45938237985 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010488512896655	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56911403508772	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75653333333333	
+==> epoch # 111 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.92944293668 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010433468818316	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57156140350877	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.59736666666667	
+==> epoch # 112 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.64086971452 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010574550761117	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56142105263158	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.4369	
+==> epoch # 113 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.90407651708 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010227272857351	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57235964912281	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.38763333333333	
+==> epoch # 114 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.94944678265 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010548069406671	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.55968421052632	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.70436666666667	
+==> epoch # 115 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.59160411552 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010446007307858	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57319298245614	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.54466666666667	
+==> epoch # 116 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.69653118825 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010367715671397	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57330701754386	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.6116	
+==> epoch # 117 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.6039084638 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010525979926363	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57051754385965	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.0644	
+==> epoch # 118 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.03907536919 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010187543467471	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57885087719298	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.70166666666667	
+==> epoch # 119 for optimizer :	
+learningRate	0.001	
+==> example speed = 932.84794863067 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010398157968159	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.57418421052632	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.46403333333333	
+==> epoch # 120 for optimizer :	
+learningRate	0.001	
+==> example speed = 933.03217745012 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010565763864949	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.56480701754386	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.76253333333333	
+==> epoch # 121 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.10604505469 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.010025358584192	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.69239473684211	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.76976666666667	
+SaveToFile: saving to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457558595:1.dat	
+==> epoch # 122 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.26921577567 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.014802366471779	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.5934298245614	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.49996666666667	
+==> epoch # 123 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.96186163677 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.017996003638234	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48749122807018	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.46713333333333	
+==> epoch # 124 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.88463034824 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.017769252981707	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48978070175439	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.763	
+==> epoch # 125 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.94882058761 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018020757779043	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.49514912280702	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0	
+==> epoch # 126 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.9486070019 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018568538783587	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48912280701754	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.43756666666667	
+==> epoch # 127 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.73354791497 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.019940607806047	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.47786842105263	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.0034	
+==> epoch # 128 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.93106782275 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018219978967954	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48892105263158	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0	
+==> epoch # 129 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.92141202946 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018439371333833	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48762280701754	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.48676666666667	
+==> epoch # 130 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.8055593114 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.017976927151457	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48882456140351	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.48893333333333	
+==> epoch # 131 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.03660652633 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018554258721265	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48185964912281	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.36073333333333	
+==> epoch # 132 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.0625858652 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01952427920612	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48071052631579	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7145	
+==> epoch # 133 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.06101878563 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01791834247182	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.49005263157895	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.76493333333333	
+==> epoch # 134 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.24515934737 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018007567383044	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48771929824561	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.68793333333333	
+==> epoch # 135 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.97844077587 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018032800436717	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48529824561404	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.69506666666667	
+==> epoch # 136 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.74775230826 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.0180560271123	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48060526315789	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.75046666666667	
+==> epoch # 137 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.33698968169 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018838172089287	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48375438596491	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.50036666666667	
+==> epoch # 138 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.22719130393 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01801918929641	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48854385964912	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.0019	
+==> epoch # 139 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.4885835723 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.01856818741072	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.49188596491228	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.59573333333333	
+==> epoch # 140 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.46179447145 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.017473159927025	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.49138596491228	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.73313333333333	
+==> epoch # 141 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.31695463928 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018879942607113	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.49161403508772	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0	
+==> epoch # 142 for optimizer :	
+learningRate	0.0001	
+==> example speed = 931.86123820773 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018949847506152	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48400877192982	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.49546666666667	
+==> epoch # 143 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.76086901225 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018620903382176	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48950877192982	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.58613333333333	
+==> epoch # 144 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.75816266866 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018808276351432	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.49339473684211	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.52023333333333	
+==> epoch # 145 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.033683744 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018201872242822	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.49685087719298	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.5587	
+==> epoch # 146 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.75030574849 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.019308142250393	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48400877192982	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.3253	
+==> epoch # 147 for optimizer :	
+learningRate	0.0001	
+==> example speed = 932.80088736792 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.019397422972478	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48172807017544	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.43716666666667	
+==> epoch # 148 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.1162314719 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018581308408439	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48684210526316	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.62706666666667	
+==> epoch # 149 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.21801872483 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018892227249536	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48309649122807	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0	
+==> epoch # 150 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.04967551999 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018906054714967	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48940350877193	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.50703333333333	
+==> epoch # 151 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.44069473292 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.019075237538382	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48393859649123	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.72883333333333	
+==> epoch # 152 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.08824253458 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018102580236413	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48624561403509	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.73456666666667	
+==> epoch # 153 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.29084333263 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.019706895650827	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48202631578947	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.7571	
+==> epoch # 154 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.33561843926 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018062601706786	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48450877192982	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.63676666666667	
+==> epoch # 155 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.18484279079 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018572063160919	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48993859649123	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.49956666666667	
+==> epoch # 156 for optimizer :	
+learningRate	0.0001	
+==> example speed = 933.13261699638 examples/s	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:loss avgErr 0.018975447933925	
+amitpc-HP-Z620-Workstation:1457558595:1:optimizer:confusion accuracy = 0.48222807017544	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.66793333333333	
+==> epoch # 157 for optimizer :	
+learningRate	0.0001	

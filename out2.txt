@@ -1,0 +1,65 @@
+{
+   accUpdate : false
+   activation : "ReLU"
+   batchNorm : false
+   batchSize : 128
+   cacheMode : "writeonce"
+   channelSize : "{25,50,80}"
+   convertData : true
+   cuda : true
+   dataset : "Mnist"
+   decayFactor : 0.1
+   dropout : true
+   dropoutProb : "{0.1,0.2,0.25,0.5,0.5}"
+   hiddenSize : "{1024,1024}"
+   kernelSize : "{4,5,6}"
+   kernelStride : "{1,1,1}"
+   learningRate : 0.01
+   lecunlcn : false
+   loadModel : true
+   loadModelPath : "/home/amit-pc/save/amitpc-HP-Z620-Workstation:1457519727:1.dat"
+   loadSize : ""
+   lrDecay : "schedule"
+   maxEpoch : 5000
+   maxOutNorm : 1
+   maxTries : 25000
+   maxWait : 700000
+   metaPath : "."
+   minLR : 1e-05
+   momentum : 0.6
+   padding : false
+   poolSize : "{2,2,2}"
+   poolStride : "{2,2,2}"
+   progress : false
+   sampleSize : "."
+   saturateEpoch : 30000
+   schedule : {[250]=1e-05,[40]=0.001,[120]=0.0001}
+   silent : false
+   standardize : true
+   trainPath : "."
+   useDevice : 1
+   validPath : "."
+   zca : false
+}	
+Model:	
+nil	
+FileLogger: log will be written to /home/amit-pc/save/amitpc-HP-Z620-Workstation:1457519727:1/amitpc-HP-Z620-Workstation:1457557324:1/log	
+==> epoch # 1 for optimizer :	
+==> example speed = 931.09873250183 examples/s	
+amitpc-HP-Z620-Workstation:1457557324:1:optimizer:loss avgErr 0.0076633984296643	
+amitpc-HP-Z620-Workstation:1457557324:1:optimizer:confusion accuracy = 0.64108771929825	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.71903333333333	
+==> epoch # 2 for optimizer :	
+learningRate	0.01	
+==> example speed = 933.29020574923 examples/s	
+amitpc-HP-Z620-Workstation:1457557324:1:optimizer:loss avgErr 0.0076533079328593	
+amitpc-HP-Z620-Workstation:1457557324:1:optimizer:confusion accuracy = 0.64052631578947	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.724	
+==> epoch # 3 for optimizer :	
+learningRate	0.01	
+==> example speed = 933.03084837133 examples/s	
+amitpc-HP-Z620-Workstation:1457557324:1:optimizer:loss avgErr 0.0076394277256832	
+amitpc-HP-Z620-Workstation:1457557324:1:optimizer:confusion accuracy = 0.64679824561404	
+amitpc-HP-Z620-Workstation:1457519727:1:validator:confusion accuracy = 0.72903333333333	
+==> epoch # 4 for optimizer :	
+learningRate	0.01	
